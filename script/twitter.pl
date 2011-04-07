@@ -11,7 +11,7 @@ use Encode;
 use Encode::Locale;
 use IPC::Run qw(run);
 
-my $server = shift;
+my $server = shift or die "usage: $0 vim-servername";
 my $config = pit_get('api.twitter.com');
 my $cv     = AE::cv;
 
