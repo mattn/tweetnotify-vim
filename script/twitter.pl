@@ -26,7 +26,7 @@ my $listener = AnyEvent::Twitter::Stream->new(
             $message =~ s!'!''!;
             run dirname(__FILE__).'/vimremote',
               '--servername', $server,
-              '--remote-expr', "twitternotify#notify('$message')";
+              '--remote-expr', "tweetnotify#notify('$message')";
         }
     },
     on_eof => sub {
