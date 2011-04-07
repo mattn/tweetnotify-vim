@@ -1,0 +1,24 @@
+description:
+
+  notify tweets in titlebar of vim
+
+required:
+
+  * perl module
+
+    AnyEvent
+    AnyEvent::Twitter::Stream
+    Config::Pit
+    Encode
+    Encode::Locale
+    File::Basename
+    IPC::Run
+
+  * vim-remote
+
+    https://github.com/ynkdir/vim-remote
+  
+setup:
+
+  # perl script/twitter.pl
+
